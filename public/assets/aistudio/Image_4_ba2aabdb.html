@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed": "#cde5ff", "on-secondary-fixed-variant": "#504534", "surface-variant": "#e9e1dd", "surface-container-highest": "#e9e1dd", "surface-bright": "#fff8f5", "primary": "#9d4300", "on-tertiary-fixed-variant": "#004b74", "tertiary": "#006398", "error": "#ba1a1a", "secondary": "#695d4a", "inverse-on-surface": "#f7efeb", "on-primary-container": "#582200", "surface-container-low": "#faf2ee", "outline-variant": "#e0c0b1", "tertiary-container": "#00a2f4", "primary-container": "#f97316", "on-secondary": "#ffffff", "on-error": "#ffffff", "surface-tint": "#9d4300", "surface-container": "#f4ece8", "on-primary-fixed-variant": "#783200", "surface-dim": "#e0d8d5", "surface": "#fff8f5", "background": "#fff8f5", "inverse-surface": "#33302d", "on-primary-fixed": "#341100", "on-primary": "#ffffff", "primary-fixed": "#ffdbca", "secondary-fixed-dim": "#d5c4ad", "on-background": "#1e1b19", "surface-container-lowest": "#ffffff", "on-surface-variant": "#584237", "on-secondary-fixed": "#231a0c", "primary-fixed-dim": "#ffb690", "surface-container-high": "#eee7e3", "secondary-container": "#f2e0c8", "on-tertiary-container": "#003554", "secondary-fixed": "#f2e0c8", "on-error-container": "#93000a", "outline": "#8c7164", "inverse-primary": "#ffb690", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "tertiary-fixed-dim": "#93ccff", "on-tertiary-fixed": "#001d32", "on-surface": "#1e1b19", "on-secondary-container": "#6f6350" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-2xl": "3rem", "space-xl": "2rem", "gutter-desktop": "1.5rem", "space-2xs": "0.25rem", "space-md": "1rem", "space-sm": "0.75rem", "gutter": "1rem", "space-lg": "1.5rem", "margin": "1rem", "margin-desktop": "2rem", "space-xs": "0.5rem" }, "fontFamily": { "headline-xl": [ "Instrument Sans" ], "body-lg": [ "Inter" ], "code-sm": [ "JetBrains Mono" ], "headline-md": [ "Instrument Sans" ], "headline-sm": [ "Instrument Sans" ], "label-sm": [ "Inter" ], "code-md": [ "JetBrains Mono" ], "body-sm": [ "Inter" ], "body-md": [ "Inter" ], "label-md": [ "Inter" ], "headline-xl-mobile": [ "Instrument Sans" ], "headline-lg": [ "Instrument Sans" ] }, "fontSize": { "headline-xl": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600" } ], "body-lg": [ "1rem", { "lineHeight": "1.625rem", "fontWeight": "400" } ], "code-sm": [ "0.75rem", { "lineHeight": "1rem", "fontWeight": "400" } ], "headline-md": [ "1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-sm": [ "1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "label-sm": [ "0.75rem", { "lineHeight": "1rem", "fontWeight": "500" } ], "code-md": [ "0.875rem", { "lineHeight": "1.25rem", "fontWeight": "500" } ], "body-sm": [ "0.75rem", { "lineHeight": "1.25rem", "fontWeight": "400" } ], "body-md": [ "0.875rem", { "lineHeight": "1.5rem", "fontWeight": "400" } ], "label-md": [ "0.875rem", { "lineHeight": "1.25rem", "fontWeight": "500" } ], "headline-xl-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg": [ "1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-md border-b border-surface-variant"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><img alt="TONO Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WYfW_EenHKQANs6TXXWSlHsY9HLgoh8-rzwjBH1oHQgLL04Cu4aoghGvEyi56HCihd3jwbcgcr1RtNhJpK8NYsNi9vOqWnWpS3l-P5ROy5SZzJOSfTe-wMXpSlavb1c-qYugsrxIj2o4Zzn8BOVIuGe0LDb7tZdoSAGpINOutak6Wxq1IXlYQLpKeqbAhvXPO7-XQ--uL3x2D80qZGt7jlKx5Mu_7SKYmYQD2SrbxMyTdbV8VaGUH8aPY"/><span class="font-headline-md text-headline-md tracking-tight text-on-surface">TONO</span></div><div class="hidden sm:inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm"><span class="material-symbols-outlined text-[13px] leading-none text-primary">auto_awesome</span><span>Hecho con Gemini</span></div></div><nav class="hidden md:flex items-center gap-space-xs" data-active-classes="text-on-surface bg-surface-container-high rounded-lg"><a aria-current="page" class="px-3 py-1.5 font-label-md transition-colors text-on-surface bg-surface-container-high rounded-lg" data-path="creador" href="#">Creador</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="plantillas" href="#">Plantillas</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="calendario" href="#">Calendario</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="analiticas" href="#">Analíticas</a></nav><div class="flex items-center gap-space-sm"><a class="inline-flex items-center gap-space-xs px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-label-md text-label-md" data-path="historial" href="#"><span class="material-symbols-outlined text-[18px]">history</span><span class="hidden lg:inline">Historial</span><kbd class="hidden sm:inline-block px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-sm text-code-sm">⌘H</kbd></a><div class="h-5 w-px bg-surface-variant hidden sm:block"></div><a class="flex items-center p-0.5 rounded-full hover:ring-2 hover:ring-primary-container transition-all" data-path="configuracion-de-cuenta" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuW3wdvU9pFBx3dATG1U2A6hi6HSdn1kLolxTMaJLHwcCpX8gijmto9hsH9CQG1fBBbDpfYz9aFYUt0R-5TKsCdJlB-GVDXmWT0scLfOz7RF2_OJq6u0l3I8HfhcYlNHXD8zpPzVMqsu3E6GhWh431mR9io7GaiGNAdMNYNUMs7bLpsHVasxrgMZsbupVQaEAjGrVJHQ0j4Hed6hOoBxWQ2wiurf7T9CEsyKmWThdLhqcHWZcJ-9ao"/></a></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Dynamic Notification / Status Toast Container (Client Controlled) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-xs px-4 py-2.5 rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl" id="toast-notification">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">check_circle</span>
+<span class="font-label-md text-label-md" id="toast-message">Copiado al portapapeles</span>
+</div>
+<!-- Workspace Subheader Strip -->
+<section class="w-full bg-surface-container-lowest px-gutter-desktop py-space-sm shadow-sm flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Espacio de Trabajo Activo</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">Proyecto: Lanzamiento v2.0</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[15px] text-tertiary">bolt</span>
+<span>Gemini 1.5 Pro Ultra-Fast</span>
+</div>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors font-label-md text-label-md text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Ajustes de modelo</span>
+</button>
+</div>
+</section>
+<!-- Two-Column Workspace Layout -->
+<div class="w-full px-gutter-desktop py-space-xl">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT PANEL: CONTROLS & PROMPT ENGINE (Col 1-5 Desktop, approx 440px-480px) -->
+<aside class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Main Form Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-lg relative overflow-hidden">
+<!-- Subtle Coral accent bar top -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-container via-primary-fixed to-surface-variant"></div>
+<!-- Section: Platform Selector -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">devices</span>
+<span>Plataforma destino</span>
+</label>
+<span class="font-code-sm text-code-sm text-on-surface-variant">4 disponibles</span>
+</div>
+<!-- Platform Cards Grid -->
+<div class="grid grid-cols-2 gap-space-xs pt-1" id="platform-selector">
+<!-- LinkedIn (Active Card) -->
+<button class="platform-btn text-left p-3 rounded-lg transition-all flex flex-col gap-1 bg-surface-container-low shadow-sm ring-2 ring-primary-container" data-platform="linkedin" type="button">
+<div class="flex items-center justify-between w-full">
+<div class="w-7 h-7 rounded-md bg-[#0A66C2]/10 text-[#0A66C2] flex items-center justify-center font-bold text-xs">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.67 1.67 0 1 0 0-3.34 1.67 1.67 0 0 0 0 3.34m1.4 9.74v-8.37H5.06v8.37h2.8z"></path></svg>
+</div>
+<span class="material-symbols-outlined text-[18px] text-primary-container">check_circle</span>
+</div>
+<div class="mt-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold block">LinkedIn</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Máx. 3.000 car.</span>
+</div>
+</button>
+<!-- Instagram Card -->
+<button class="platform-btn text-left p-3 rounded-lg transition-all flex flex-col gap-1 bg-surface-container-lowest hover:bg-surface-container-low" data-platform="instagram" type="button">
+<div class="flex items-center justify-between w-full">
+<div class="w-7 h-7 rounded-md bg-[#E4405F]/10 text-[#E4405F] flex items-center justify-center">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</div>
+<span class="material-symbols-outlined text-[18px] text-surface-variant">radio_button_unchecked</span>
+</div>
+<div class="mt-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Instagram</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Máx. 2.200 car.</span>
+</div>
+</button>
+<!-- X / Twitter Card -->
+<button class="platform-btn text-left p-3 rounded-lg transition-all flex flex-col gap-1 bg-surface-container-lowest hover:bg-surface-container-low" data-platform="x" type="button">
+<div class="flex items-center justify-between w-full">
+<div class="w-7 h-7 rounded-md bg-black/10 text-black flex items-center justify-center">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+</div>
+<span class="material-symbols-outlined text-[18px] text-surface-variant">radio_button_unchecked</span>
+</div>
+<div class="mt-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold block">X / Twitter</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Máx. 280 car.</span>
+</div>
+</button>
+<!-- TikTok Card -->
+<button class="platform-btn text-left p-3 rounded-lg transition-all flex flex-col gap-1 bg-surface-container-lowest hover:bg-surface-container-low" data-platform="tiktok" type="button">
+<div class="flex items-center justify-between w-full">
+<div class="w-7 h-7 rounded-md bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 2.89 3.5 2.76 1.43-.05 2.68-1.03 2.97-2.43.13-.53.15-1.08.15-1.62V.02z"></path></svg>
+</div>
+<span class="material-symbols-outlined text-[18px] text-surface-variant">radio_button_unchecked</span>
+</div>
+<div class="mt-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold block">TikTok</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Máx. 2.200 car.</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Section: Tone of Voice Selection -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">record_voice_over</span>
+<span>Tono de voz</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Persuasión adaptativa</span>
+</label>
+<!-- Tone Chips -->
+<div class="flex flex-wrap gap-2 pt-1" id="tone-chips">
+<button class="tone-chip px-3 py-1.5 rounded-full font-label-md text-label-md transition-all bg-primary-fixed text-on-primary-fixed-variant font-medium ring-1 ring-primary-container/30" type="button">
+                Profesional
+              </button>
+<button class="tone-chip px-3 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface" type="button">
+                Cercano
+              </button>
+<button class="tone-chip px-3 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface" type="button">
+                Inspirador
+              </button>
+<button class="tone-chip px-3 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface" type="button">
+                Vendedor
+              </button>
+<button class="tone-chip px-3 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface" type="button">
+                Humorístico
+              </button>
+</div>
+</div>
+<!-- Section: Prompt Textarea -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5" for="prompt-input">
+<span class="material-symbols-outlined text-[18px] text-primary">edit_note</span>
+<span>¿Sobre qué querés publicar?</span>
+</label>
+<span class="font-code-sm text-code-sm text-on-surface-variant" id="char-prompt-counter">148 caracteres</span>
+</div>
+<div class="relative rounded-lg bg-surface-container-low transition-all focus-within:ring-2 focus-within:ring-primary-container focus-within:bg-surface-container-lowest">
+<textarea class="w-full bg-transparent px-3.5 py-3 font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none resize-none" id="prompt-input" placeholder="Ej: Lanzamos una nueva funcionalidad de automatización con IA que reduce el tiempo de redacción en un 80%..." rows="4">Acabamos de lanzar la versión 2.0 de nuestra plataforma con integración de Gemini 1.5 Pro. Los creadores ahora pueden planificar un mes de contenidos en menos de 10 minutos.</textarea>
+<div class="flex items-center justify-between px-3.5 py-2 bg-surface-container/40 rounded-b-lg">
+<span class="font-code-sm text-code-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">psychology</span>
+<span>Modo Extendido Gemini</span>
+</span>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-0.5" id="clear-btn" type="button">
+<span class="material-symbols-outlined text-[13px]">backspace</span>
+<span>Limpiar</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Section: Optional Fields (Accordion / Clean Collapsible) -->
+<div class="rounded-lg bg-surface-container-low p-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between cursor-pointer" id="advanced-toggle">
+<span class="font-label-md text-label-md text-on-surface font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">tune</span>
+<span>Parámetros de contexto adicional</span>
+</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant transition-transform rotate-180" id="advanced-arrow">expand_more</span>
+</div>
+<div class="flex flex-col gap-space-sm pt-1" id="advanced-content">
+<!-- Audiencia -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Público objetivo / Audiencia</label>
+<input class="w-full bg-surface-container-lowest px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary-container" type="text" value="Fundadores, creadores de contenido B2B y agencias de marketing"/>
+</div>
+<!-- CTA -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Llamado a la acción (CTA deseado)</label>
+<input class="w-full bg-surface-container-lowest px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary-container" type="text" value="Probar gratis con 14 días de prueba"/>
+</div>
+</div>
+</div>
+<!-- Section: Toggles -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-1">
+<!-- Toggle Emojis -->
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">sentiment_satisfied</span>
+<span class="font-label-md text-label-md text-on-surface">Incluir emojis</span>
+</div>
+<div class="relative inline-flex items-center">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</div>
+</label>
+<!-- Toggle Hashtags -->
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">tag</span>
+<span class="font-label-md text-label-md text-on-surface">Hashtags óptimos</span>
+</div>
+<div class="relative inline-flex items-center">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</div>
+</label>
+</div>
+<!-- Primary Generation Button -->
+<button class="w-full py-3.5 px-space-md rounded-lg bg-primary-container hover:bg-primary text-white font-label-md text-label-md font-semibold tracking-wide shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 group active:scale-[0.99]" id="btn-generate" type="button">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:rotate-12">auto_awesome</span>
+<span>Generar posts con IA</span>
+<kbd class="ml-2 px-1.5 py-0.5 rounded bg-black/20 text-white font-code-sm text-code-sm">⌘ Enter</kbd>
+</button>
+<!-- Prompt inspiration bar underneath -->
+<div class="flex flex-col gap-1.5 pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">O probá estas ideas rápidas:</span>
+<div class="flex flex-wrap gap-1.5">
+<button class="prompt-chip font-code-sm text-code-sm px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors text-left truncate max-w-full" type="button">
+                💡 Anuncio de nueva contratación clave
+              </button>
+<button class="prompt-chip font-code-sm text-code-sm px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors text-left truncate max-w-full" type="button">
+                📉 Lección aprendida de un fracaso en Q3
+              </button>
+<button class="prompt-chip font-code-sm text-code-sm px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors text-left truncate max-w-full" type="button">
+                🚀 Análisis de tendencias de IA para 2025
+              </button>
+</div>
+</div>
+</div>
+<!-- Metric pill / Micro-stats Widget -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">analytics</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold block">88 / 100</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Índice proyectado de viralidad</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<!-- Inline Mini Sparkline Chart -->
+<svg class="w-20 h-7 text-primary-container overflow-visible" fill="none" viewbox="0 0 80 24">
+<path d="M2 18 C 15 17, 25 19, 35 10 C 45 3, 55 12, 65 5 L 78 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<circle cx="78" cy="2" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+</div>
+</aside>
+<!-- RIGHT PANEL: GENERATED VARIANTS & PREVIEW (Col 6-12 Desktop) -->
+<section class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Header Strip for Results -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs pb-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">3 variantes generadas</span>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-medium">
+              LinkedIn • Tono Profesional
+            </span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[15px] text-tertiary">schedule</span>
+<span>Hace 10 seg</span>
+</span>
+<div class="h-3 w-px bg-surface-variant"></div>
+<button class="hover:text-on-surface transition-colors flex items-center gap-0.5" type="button">
+<span>Ordenar por impacto</span>
+<span class="material-symbols-outlined text-[16px]">arrow_drop_down</span>
+</button>
+</div>
+</div>
+<!-- CARD 1: Directa y Analítica -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-md group relative">
+<!-- Variant Top Meta -->
+<div class="flex items-center justify-between border-b border-surface-container pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-code-sm text-code-sm font-semibold">
+                #1
+              </span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Enfoque: Directo &amp; Estratégico</span>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-fixed/60 px-2 py-0.5 rounded-full">Recomendado</span>
+</div>
+<!-- Mini Read Time / Format -->
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+<span>Lectura: 45s</span>
+</span>
+</div>
+</div>
+<!-- Post Content -->
+<div class="flex flex-col gap-3">
+<p class="font-body-md text-body-md text-on-surface whitespace-pre-line leading-relaxed selection:bg-primary-fixed">La mayor trampa de crear contenido no es la falta de ideas. Es el tiempo que te consume el formato.
+
+Hoy lanzamos oficialmente TONO 2.0 potenciado con Gemini. Pasamos de horas frente a un documento en blanco a tener 3 ángulos de publicación listos para validar en 10 minutos.
+
+¿El resultado? Menos fricción operativa y más foco en la estrategia real.</p>
+<!-- Hashtags List -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="font-code-sm text-code-sm text-tertiary hover:underline cursor-pointer">#Productivity</span>
+<span class="font-code-sm text-code-sm text-tertiary hover:underline cursor-pointer">#ContentStrategy</span>
+<span class="font-code-sm text-code-sm text-tertiary hover:underline cursor-pointer">#AI</span>
+<span class="font-code-sm text-code-sm text-tertiary hover:underline cursor-pointer">#BuildingInPublic</span>
+</div>
+</div>
+<!-- Bottom Action Bar & Character Counter -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs bg-surface-container-low/50 -mx-space-lg -mb-space-lg p-space-md rounded-b-xl">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm text-on-surface-variant font-medium">428 / 3.000 car.</span>
+<!-- Subtle Progress Bar -->
+<div class="w-16 h-1.5 rounded-full bg-surface-variant overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 14.2%;"></div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="copy-trigger inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors shadow-sm" data-text="La mayor trampa de crear contenido no es la falta de ideas. Es el tiempo que te consume el formato. Hoy lanzamos oficialmente TONO 2.0 potenciado con Gemini." type="button">
+<span class="material-symbols-outlined text-[17px]">content_copy</span>
+<span>Copiar</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[17px]">sync</span>
+<span>Regenerar</span>
+</button>
+<button class="open-preview-trigger inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary-container text-white hover:bg-primary font-label-md text-label-md font-medium transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[17px]">visibility</span>
+<span>Vista previa</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 2: Storytelling / Gancho Emocional -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-md group relative">
+<div class="flex items-center justify-between border-b border-surface-container pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-code-sm text-code-sm font-semibold">
+                #2
+              </span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Enfoque: Historia Personal • Lecciones</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_graph</span>
+<span>Alto Engagement</span>
+</span>
+</div>
+<!-- Post Content -->
+<div class="flex flex-col gap-3">
+<p class="font-body-md text-body-md text-on-surface whitespace-pre-line leading-relaxed selection:bg-primary-fixed">Hace 6 meses pasaba 3 horas cada domingo planificando los posts de la semana. La mitad quedaban a medias por agotamiento mental.
+
+Por eso creamos TONO 2.0. No para reemplazar el criterio humano, sino para multiplicar la velocidad de iteración.
+
+Tres aprendizajes clave que cambiaron todo:
+1. La consistencia le gana a la inspiración.
+2. La IA es un sparring creativo, no un piloto automático.
+3. Si reducís la fricción inicial, publicás 3x más.</p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="font-code-sm text-code-sm text-tertiary hover:underline cursor-pointer">#Emprendimiento</span>
+<span class="font-code-sm text-code-sm text-tertiary hover:underline cursor-pointer">#MarketingDigital</span>
+<span class="font-code-sm text-code-sm text-tertiary hover:underline cursor-pointer">#Creadores</span>
+</div>
+</div>
+<!-- Bottom Action Bar & Character Counter -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs bg-surface-container-low/50 -mx-space-lg -mb-space-lg p-space-md rounded-b-xl">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm text-on-surface-variant font-medium">512 / 3.000 car.</span>
+<div class="w-16 h-1.5 rounded-full bg-surface-variant overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 17.1%;"></div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="copy-trigger inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors shadow-sm" data-text="Hace 6 meses pasaba 3 horas cada domingo planificando los posts de la semana... Por eso creamos TONO 2.0." type="button">
+<span class="material-symbols-outlined text-[17px]">content_copy</span>
+<span>Copiar</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[17px]">sync</span>
+<span>Regenerar</span>
+</button>
+<button class="open-preview-trigger inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md font-medium transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[17px]">visibility</span>
+<span>Vista previa</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 3: Streaming Active Generation Effect -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm ring-2 ring-primary-container/20 flex flex-col gap-space-md relative overflow-hidden">
+<!-- Subtle Shimmer Indicator Background -->
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-primary-fixed/10 to-transparent pointer-events-none animate-[pulse_2.5s_infinite]"></div>
+<div class="flex items-center justify-between border-b border-surface-container pb-space-xs relative z-10">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center font-code-sm text-code-sm font-semibold">
+                #3
+              </span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Enfoque: Gancho de Contrariedad</span>
+</div>
+<!-- Streaming Pulse Badge -->
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px] text-primary-container animate-spin">refresh</span>
+<span>Generando con Gemini...</span>
+</div>
+</div>
+<!-- Streaming Text Container with blinking cursor -->
+<div class="flex flex-col gap-3 relative z-10">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              La inteligencia artificial no vino a quitarte autenticidad, vino a devolverte tus domingos libres. Con TONO 2.0 eliminamos el bloqueo de la hoja en blanco con sugerencias de ganchos de alto impacto
+              <span class="inline-block w-2 h-4 bg-primary-container ml-0.5 align-middle animate-pulse"></span>
+</p>
+<div class="flex items-center gap-2 text-on-surface-variant font-code-sm text-code-sm">
+<span class="animate-pulse">Escribiendo llamadas a la acción...</span>
+</div>
+</div>
+<!-- Bottom Action Bar for Streaming State -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs bg-surface-container-low/50 -mx-space-lg -mb-space-lg p-space-md rounded-b-xl relative z-10">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm text-primary-container font-medium">215 / 3.000 car.</span>
+<div class="w-16 h-1.5 rounded-full bg-surface-variant overflow-hidden">
+<div class="bg-primary-container h-full rounded-full animate-pulse" style="width: 7%;"></div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-error font-label-md text-label-md font-medium transition-colors" type="button">
+<span class="material-symbols-outlined text-[17px]">stop_circle</span>
+<span>Detener generación</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+</div>
+</div>
+<!-- LINKEDIN LIVE PREVIEW MODAL (Linear / Vercel Sheet Style) -->
+<div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm hidden items-center justify-center p-4" id="preview-modal">
+<div class="bg-surface-container-lowest max-w-xl w-full rounded-xl shadow-2xl overflow-hidden flex flex-col max-h-[921px]">
+<!-- Modal Header -->
+<div class="px-6 py-4 border-b border-surface-container flex items-center justify-between bg-surface-container-low">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-[#0A66C2] text-white flex items-center justify-center text-xs">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.67 1.67 0 1 0 0-3.34 1.67 1.67 0 0 0 0 3.34m1.4 9.74v-8.37H5.06v8.37h2.8z"></path></svg>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Previsualización de Publicación</span>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" id="close-modal-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- LinkedIn Simulated Feed Card -->
+<div class="p-6 overflow-y-auto bg-surface-container">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-4 flex flex-col gap-3">
+<!-- Mock User Info -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Professional avatar portrait of a creative director in tech, smiling warmly in a neutral minimalist studio setting with soft natural window lighting, wearing a minimalist dark turtleneck." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADAzxMLnVYgt_kMkr9YuZCrPZp7M5U_K0ajqlYDUacq6OGQ_DerNlBWN9LeabZ3OYuX3HOKC7x9ScScWo7gbk8k-clXw9mT1Qz04Lzp_TEeTkMloQNEh3cLpK9tI18z0oF1m2ZlJF7VfpZjwUgRQ3Uhj6FpjfcUHeeAUwFQq6t6RTr7lBOXKi0sn7FEsZna902LYf3fbE8dW15BCp9FNOU6qgQ-WUUrMgJzqhOJHfl8eVposHNHJFY"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md text-on-surface font-bold">Lucas Benítez</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">• 1er</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Founder &amp; Product Strategist en TONO AI</span>
+<span class="font-code-sm text-code-sm text-outline flex items-center gap-1 mt-0.5">
+<span>Ahora</span> • 
+                  <span class="material-symbols-outlined text-[12px]">public</span>
+</span>
+</div>
+</div>
+<button class="text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</div>
+<!-- Simulated Content -->
+<div class="font-body-md text-body-md text-on-surface whitespace-pre-line leading-relaxed">
+            La mayor trampa de crear contenido no es la falta de ideas. Es el tiempo que te consume el formato.
+
+            Hoy lanzamos oficialmente TONO 2.0 potenciado con Gemini. Pasamos de horas frente a un documento en blanco a tener 3 ángulos de publicación listos para validar en 10 minutos.
+
+            ¿El resultado? Menos fricción operativa y más foco en la estrategia real.
+
+            <span class="text-tertiary">#Productivity #ContentStrategy #AI #BuildingInPublic</span>
+</div>
+<!-- Mock Visual Card Attachment Inside Post -->
+<div class="rounded-lg overflow-hidden relative mt-1 bg-surface-container-high">
+<img class="w-full h-48 object-cover" data-alt="Minimalist desktop workspace with a sleek laptop screen displaying modern analytics charts and clean writing editor, next to a ceramic cup of coffee, clean architectural lighting, coral and warm neutral color tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe8Mepzj1jKqWoSe0eOAewaaIR2WzZqf3grSomMot2hUkPmisAbMtey3MN5LJAFOqgQxYl_30-Kh63o3NG-pDka6v7CnEuB84XPcLVIzTiVJj9SiAIWnhTQIyVNsE4mHnzKXWGRx47t1Fm1NHOzzo9qC5e-Xs1m8jMZI3sZ2DfdQDcvmfuCrKqVlQu9UaVm0r3pRyc3_8D4RX9j83wdm0O1NHftP1S2I8IQzSCC7puLCB_XS5RfeSZ"/>
+<div class="p-3 bg-surface-container-lowest flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider">tono.ai/v2-release</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">TONO 2.0 — El copiloto de contenido para equipos B2B</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">open_in_new</span>
+</div>
+</div>
+<!-- LinkedIn Social Stats -->
+<div class="flex items-center justify-between pt-2 border-t border-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="flex -space-x-1">
+<span class="w-4 h-4 rounded-full bg-[#0A66C2] text-white flex items-center justify-center text-[9px]"><span class="material-symbols-outlined text-[10px]">thumb_up</span></span>
+<span class="w-4 h-4 rounded-full bg-primary-container text-white flex items-center justify-center text-[9px]"><span class="material-symbols-outlined text-[10px]">favorite</span></span>
+</span>
+<span class="ml-1">84 recomendaciones</span>
+</div>
+<span>19 comentarios • 6 veces compartido</span>
+</div>
+<!-- LinkedIn Post Actions -->
+<div class="grid grid-cols-4 gap-1 pt-1 border-t border-surface-container">
+<button class="py-2 flex items-center justify-center gap-1 font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">thumb_up</span>
+<span>Recomendar</span>
+</button>
+<button class="py-2 flex items-center justify-center gap-1 font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Comentar</span>
+</button>
+<button class="py-2 flex items-center justify-center gap-1 font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">repeat</span>
+<span>Compartir</span>
+</button>
+<button class="py-2 flex items-center justify-center gap-1 font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Enviar</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="px-6 py-3.5 bg-surface-container-lowest border-t border-surface-container flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-on-surface-variant">Renderizado de alta fidelidad 1:1</span>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors font-medium" id="modal-copy-btn" type="button">
+            Copiar texto
+          </button>
+<button class="px-4 py-2 rounded-lg bg-primary-container text-white hover:bg-primary font-label-md text-label-md transition-colors font-medium" type="button">
+            Programar en calendario
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interactions and Component State Logic
+  document.addEventListener('DOMContentLoaded', () => {
+    
+    // Platform Selector toggle logic
+    const platformButtons = document.querySelectorAll('.platform-btn');
+    platformButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        platformButtons.forEach(b => {
+          b.classList.remove('bg-surface-container-low', 'shadow-sm', 'ring-2', 'ring-primary-container');
+          b.classList.add('bg-surface-container-lowest');
+          const check = b.querySelector('.material-symbols-outlined');
+          if (check) {
+            check.textContent = 'radio_button_unchecked';
+            check.classList.remove('text-primary-container');
+            check.classList.add('text-surface-variant');
+          }
+        });
+        btn.classList.add('bg-surface-container-low', 'shadow-sm', 'ring-2', 'ring-primary-container');
+        btn.classList.remove('bg-surface-container-lowest');
+        const check = btn.querySelector('.material-symbols-outlined');
+        if (check) {
+          check.textContent = 'check_circle';
+          check.classList.add('text-primary-container');
+          check.classList.remove('text-surface-variant');
+        }
+      });
+    });
+
+    // Tone Chips selection logic
+    const toneChips = document.querySelectorAll('.tone-chip');
+    toneChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        toneChips.forEach(c => {
+          c.classList.remove('bg-primary-fixed', 'text-on-primary-fixed-variant', 'font-medium', 'ring-1', 'ring-primary-container/30');
+          c.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        chip.classList.add('bg-primary-fixed', 'text-on-primary-fixed-variant', 'font-medium', 'ring-1', 'ring-primary-container/30');
+        chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      });
+    });
+
+    // Prompt Character Count
+    const promptInput = document.getElementById('prompt-input');
+    const promptCounter = document.getElementById('char-prompt-counter');
+    if (promptInput && promptCounter) {
+      promptInput.addEventListener('input', () => {
+        promptCounter.textContent = `${promptInput.value.length} caracteres`;
+      });
+    }
+
+    // Clear Button
+    const clearBtn = document.getElementById('clear-btn');
+    if (clearBtn && promptInput && promptCounter) {
+      clearBtn.addEventListener('click', () => {
+        promptInput.value = '';
+        promptCounter.textContent = '0 caracteres';
+        promptInput.focus();
+      });
+    }
+
+    // Advanced contextual inputs toggle
+    const advToggle = document.getElementById('advanced-toggle');
+    const advContent = document.getElementById('advanced-content');
+    const advArrow = document.getElementById('advanced-arrow');
+    if (advToggle && advContent && advArrow) {
+      advToggle.addEventListener('click', () => {
+        const isHidden = advContent.classList.toggle('hidden');
+        advArrow.classList.toggle('rotate-180', !isHidden);
+      });
+    }
+
+    // Prompt Chips fast insertion
+    const promptChips = document.querySelectorAll('.prompt-chip');
+    promptChips.forEach(pChip => {
+      pChip.addEventListener('click', () => {
+        const text = pChip.textContent.trim().replace(/^[^\s]+\s/, '');
+        if (promptInput) {
+          promptInput.value = text;
+          if (promptCounter) promptCounter.textContent = `${text.length} caracteres`;
+          promptInput.focus();
+        }
+      });
+    });
+
+    // Toast Notification logic
+    const toast = document.getElementById('toast-notification');
+    const toastMsg = document.getElementById('toast-message');
+    function showToast(message) {
+      if (!toast || !toastMsg) return;
+      toastMsg.textContent = message;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 2400);
+    }
+
+    // Copy to clipboard handlers
+    const copyButtons = document.querySelectorAll('.copy-trigger');
+    copyButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const text = btn.getAttribute('data-text') || 'Contenido del post copiado.';
+        navigator.clipboard?.writeText(text).catch(() => {});
+        showToast('Texto copiado al portapapeles');
+      });
+    });
+
+    // Modal Live Preview logic
+    const modal = document.getElementById('preview-modal');
+    const openPreviewButtons = document.querySelectorAll('.open-preview-trigger');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+    const modalCopyBtn = document.getElementById('modal-copy-btn');
+
+    openPreviewButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (modal) {
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        }
+      });
+    });
+
+    if (closeModalBtn && modal) {
+      closeModalBtn.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      });
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+      });
+    }
+
+    if (modalCopyBtn) {
+      modalCopyBtn.addEventListener('click', () => {
+        showToast('Copiado desde la vista previa');
+      });
+    }
+
+    // Keyboard shortcut Cmd/Ctrl + Enter
+    window.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') {
+        const btnGen = document.getElementById('btn-generate');
+        if (btnGen) {
+          btnGen.classList.add('scale-95');
+          setTimeout(() => btnGen.classList.remove('scale-95'), 150);
+          showToast('Generando nuevas variantes...');
+        }
+      }
+    });
+
+  });
+</script></main><footer class="w-full border-t border-surface-variant bg-surface-container-lowest py-space-md"><div class="w-full px-gutter-desktop flex flex-col sm:flex-row items-center justify-between gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><span>© 2025 TONO AI • Productividad asistida para redes</span><div class="flex items-center gap-space-md"><span class="font-code-sm text-code-sm text-on-surface-variant">v2.4.0-gemini</span><a class="hover:text-on-surface transition-colors" data-path="atajos-de-teclado" href="#">Atajos (⌘K)</a><a class="hover:text-on-surface transition-colors" data-path="soporte" href="#">Soporte</a></div></div></footer></body></html>

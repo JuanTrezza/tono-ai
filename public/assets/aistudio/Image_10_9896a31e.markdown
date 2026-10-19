@@ -1,0 +1,227 @@
+---
+name: Editorial Precision
+colors:
+  surface: '#fff8f5'
+  surface-dim: '#e0d8d5'
+  surface-bright: '#fff8f5'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#faf2ee'
+  surface-container: '#f4ece8'
+  surface-container-high: '#eee7e3'
+  surface-container-highest: '#e9e1dd'
+  on-surface: '#1e1b19'
+  on-surface-variant: '#584237'
+  inverse-surface: '#33302d'
+  inverse-on-surface: '#f7efeb'
+  outline: '#8c7164'
+  outline-variant: '#e0c0b1'
+  surface-tint: '#9d4300'
+  primary: '#9d4300'
+  on-primary: '#ffffff'
+  primary-container: '#f97316'
+  on-primary-container: '#582200'
+  inverse-primary: '#ffb690'
+  secondary: '#695d4a'
+  on-secondary: '#ffffff'
+  secondary-container: '#f2e0c8'
+  on-secondary-container: '#6f6350'
+  tertiary: '#006398'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#00a2f4'
+  on-tertiary-container: '#003554'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#ffdbca'
+  primary-fixed-dim: '#ffb690'
+  on-primary-fixed: '#341100'
+  on-primary-fixed-variant: '#783200'
+  secondary-fixed: '#f2e0c8'
+  secondary-fixed-dim: '#d5c4ad'
+  on-secondary-fixed: '#231a0c'
+  on-secondary-fixed-variant: '#504534'
+  tertiary-fixed: '#cde5ff'
+  tertiary-fixed-dim: '#93ccff'
+  on-tertiary-fixed: '#001d32'
+  on-tertiary-fixed-variant: '#004b74'
+  background: '#fff8f5'
+  on-background: '#1e1b19'
+  surface-variant: '#e9e1dd'
+typography:
+  headline-xl:
+    fontFamily: Instrument Sans
+    fontSize: 2.25rem
+    fontWeight: '600'
+    lineHeight: 2.75rem
+    letterSpacing: -0.025em
+  headline-xl-mobile:
+    fontFamily: Instrument Sans
+    fontSize: 1.75rem
+    fontWeight: '600'
+    lineHeight: 2.25rem
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Instrument Sans
+    fontSize: 1.5rem
+    fontWeight: '600'
+    lineHeight: 2rem
+    letterSpacing: -0.02em
+  headline-md:
+    fontFamily: Instrument Sans
+    fontSize: 1.25rem
+    fontWeight: '600'
+    lineHeight: 1.75rem
+    letterSpacing: -0.015em
+  headline-sm:
+    fontFamily: Instrument Sans
+    fontSize: 1.125rem
+    fontWeight: '500'
+    lineHeight: 1.5rem
+    letterSpacing: -0.01em
+  body-lg:
+    fontFamily: Inter
+    fontSize: 1rem
+    fontWeight: '400'
+    lineHeight: 1.625rem
+  body-md:
+    fontFamily: Inter
+    fontSize: 0.875rem
+    fontWeight: '400'
+    lineHeight: 1.5rem
+  body-sm:
+    fontFamily: Inter
+    fontSize: 0.75rem
+    fontWeight: '400'
+    lineHeight: 1.25rem
+  label-md:
+    fontFamily: Inter
+    fontSize: 0.875rem
+    fontWeight: '500'
+    lineHeight: 1.25rem
+  label-sm:
+    fontFamily: Inter
+    fontSize: 0.75rem
+    fontWeight: '500'
+    lineHeight: 1rem
+  code-md:
+    fontFamily: JetBrains Mono
+    fontSize: 0.875rem
+    fontWeight: '500'
+    lineHeight: 1.25rem
+  code-sm:
+    fontFamily: JetBrains Mono
+    fontSize: 0.75rem
+    fontWeight: '400'
+    lineHeight: 1rem
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-desktop: 1.5rem
+  margin: 1rem
+  margin-desktop: 2rem
+  space-2xs: 0.25rem
+  space-xs: 0.5rem
+  space-sm: 0.75rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2rem
+  space-2xl: 3rem
+---
+
+## Brand & Style
+
+Este sistema de diseño encarna una herramienta de productividad asistida por inteligencia artificial orientada a creadores de contenido, solopreneurs y equipos de marketing modernos. Se sitúa en la intersección entre la sobriedad técnica de Vercel o Linear y la calidez editorial de Notion, proyectando un entorno enfocado, sereno y confiable.
+
+### Personalidad y Tono
+- **Enfocado y Silencioso:** La interfaz se desvanece en segundo plano para poner en primer plano el contenido generado. Menos ornamentación y más estructura.
+- **Ágil e Inteligente:** Respuestas visuales instantáneas, transiciones precisas e indicadores de estado mínimos que transmiten velocidad técnica.
+- **Cálido y Humano:** La frialdad habitual de los productos de software para desarrolladores se neutraliza con fondos piedra cálidos y toques corales luminosos que invitan a la creación creativa sin saturar.
+
+### Filosofía Estética
+Minimalismo utilitario contemporáneo. Se basa en una arquitectura de superficies blancas puras sobre fondos cálidos de tono piedra, contenidas por micropatrones de líneas finas de 1 píxel (`#E7E5E4`), radios consistentes de 12px y una jerarquía tipográfica rigurosa. El acento coral actúa exclusivamente como catalizador de atención: resalta acciones primarias, estados de generación activa y métricas de éxito.
+
+## Colors
+
+La paleta cromática se apoya en una estructura deliberadamente restringida para maximizar la legibilidad y evitar la fatiga visual durante sesiones prolongadas de redacción.
+
+### Tokens de Color Principales
+- **Fondo de Aplicación (`#FAFAF9`):** Tono piedra suave y cálido que amortigua el brillo de pantallas modernas y define un lienzo acogedor.
+- **Superficie de Tarjetas y Paneles (`#FFFFFF`):** Blanco óptico para encapsular bloques de contenido, editores y ventanas modales, elevándolos visualmente del lienzo.
+- **Acento Primario (`#F97316`):** Coral encendido de alta energía. Reservado estrictamente para llamadas a la acción clave (CTA), botones de generación con IA, selecciones activas y estados interactivos de foco.
+- **Acento Suave / Contenedor (`#FFEDD5`):** Fondo melocotón/coral atenuado para insignias, píldoras informativas de IA, resaltados de sintaxis y estados hover ligeros.
+- **Texto Principal (`#1C1917`):** Tinta carbón cálida de alto contraste para titulares y cuerpo de texto sin la estridencia de un negro puro `#000000`.
+- **Texto Secundario (`#78716C`):** Gris piedra medio para metadatos, etiquetas secundarias, marcadores de posición y atajos de teclado.
+- **Bordes y Divisores (`#E7E5E4`):** Gris piedra neutro de 1px que delimita contenedores, menús desplegables y tablas de forma nítida y calibrada.
+
+## Typography
+
+La selección tipográfica responde a tres funciones especializadas dentro del flujo de trabajo:
+
+1. **Titulares e Identidad (`Instrument Sans`):** Una fuente geométrica contemporánea con sutiles matices caligráficos. Aporta distinción y presencia editorial en títulos de vistas, modales y tarjetas destacadas.
+2. **Lectura y Controles de Interfaz (`Inter`):** La base funcional del sistema. Proporciona máxima neutralidad, claridad métrica y legibilidad en áreas densas como formularios de prompts, listados y configuraciones.
+3. **Métricas, Tokens y Contadores (`JetBrains Mono`):** Diseñada para datos exactos. Se aplica exclusivamente en contadores de caracteres (X/Twitter, LinkedIn), límites de tokens de IA, atajos de teclado del editor (`Cmd + K`) y sellos de fecha/hora.
+
+## Layout & Spacing
+
+El diseño se fundamenta en un sistema de rejilla fluida estructurada sobre múltiplos estrictos de 4px y 8px.
+
+### Estructura de Pantalla
+- **Desktop (>= 1024px):** Disposición tripartita: barra lateral de navegación colapsable (240px a 64px), panel de trabajo central para composición/prompts (ancho dinámico con máximo de 720px) y barra lateral derecha contextual para previsualizaciones de redes sociales y ajustes de tono (360px). Márgenes exteriores de `margin-desktop` (2rem).
+- **Tablet (768px - 1023px):** Barra lateral reducida a iconos, panel principal expandido y previsualización accesible mediante un panel deslizante o pestañas superiores.
+- **Mobile (< 768px):** Diseño mono-columna lineal con márgenes de pantalla de `margin` (1rem). Navegación superior compacta con barra de herramientas de acción flotante anclada a la parte inferior.
+
+### Ritmo Espacial
+El espaciado busca emular herramientas de escritura serena: el espacio vacío actúa como separador activo. No se apilan bloques sin al menos `space-lg` (1.5rem) de respiro, preservando la concentración en el texto generado.
+
+## Elevation & Depth
+
+Siguiendo la estética técnica de Linear y Vercel, la profundidad no se construye con sombras pesadas ni falsos volúmenes 3D, sino mediante una combinación de **bordes finos de alta precisión y sombras ambientales difusas**.
+
+### Niveles de Superficie
+- **Nivel 0 (Fondo Base):** Color `#FAFAF9`. Plana, sin sombras.
+- **Nivel 1 (Superficies de Contenido):** Color `#FFFFFF`, contenida por un borde sólido continuo de 1px con `#E7E5E4`. Sombra ambiental casi imperceptible: `0 1px 2px 0 rgba(28, 25, 23, 0.03)`.
+- **Nivel 2 (Tarjetas Activas, Desplegables y Hover):** Color `#FFFFFF`, borde de 1px `#E7E5E4`. Sombra suspendida: `0 4px 12px -2px rgba(28, 25, 23, 0.06), 0 2px 4px -2px rgba(28, 25, 23, 0.03)`.
+- **Nivel 3 (Modales y Comandos Flotantes Cmd+K):** Color `#FFFFFF`, borde de 1px `#E7E5E4`. Sombra focal: `0 20px 25px -5px rgba(28, 25, 23, 0.08), 0 8px 10px -6px rgba(28, 25, 23, 0.04)`. Fondo atenuado con un velo translúcido `rgba(28, 25, 23, 0.3)` con filtro de desenfoque de fondo (`backdrop-filter: blur(4px)`).
+
+## Shapes
+
+El sistema aplica una geometría suave y controlada centrada en radios de esquina de **12px** (`rounded-xl` / `0.75rem`) como estándar por defecto para tarjetas, campos de formulario interactivos y paneles flotantes.
+
+### Aplicación de Radios
+- **Bases y Tarjetas Principales (`0.75rem` / 12px):** Todo contenedor contenedor de contenido, editor de texto, previsualizador de publicaciones y modal adopta exactamente 12px de radio exterior.
+- **Botones y Campos de Entrada (`0.5rem` / 8px):** Para mantener la nitidez y evitar que los controles pequeños parezcan globulares, los inputs, selects y botones principales utilizan 8px.
+- **Píldoras e Insignias (`9999px` / Full Pill):** Las etiquetas de estado (ej. "Borrador", "Programado", "Generado con IA") y los interruptores de tono utilizan bordes completamente redondeados en cápsula.
+
+## Components
+
+### Botones (Buttons)
+- **Primario (Generar / Publicar):** Fondo `#F97316`, texto `#FFFFFF`, peso tipográfico `500`. Radio de 8px. En reposo sin sombra pesada; en hover fondo `#EA580C`. Transición suave de 150ms.
+- **Secundario / Outline:** Fondo `#FFFFFF`, borde de 1px `#E7E5E4`, texto `#1C1917`. En hover, fondo `#F5F5F4` y borde `#D6D3D1`.
+- **Fantasma / Icono:** Fondo transparente, texto `#78716C`. En hover, fondo `#F5F5F4` y texto `#1C1917`.
+
+### Entradas de Texto y Prompt (Input Fields)
+- Contenedor con fondo `#FFFFFF`, borde de 1px `#E7E5E4`, radio de 8px y padding horizontal de 12px con altura fija de 40px (o altura dinámica para áreas de texto).
+- Tipografía `Inter` en `body-md` (`#1C1917`) con placeholder en `#78716C`.
+- **Estado Focus:** Borde acentuado en `#F97316` con anillo de enfoque sutil: `box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15)`.
+
+### Tarjetas de Publicación (Post Cards)
+- Fondo blanco puro `#FFFFFF`, radio de 12px, borde de 1px `#E7E5E4` y padding interno de 20px (`space-lg`).
+- Cabecera con selector de red social (icono discreto), área central para el cuerpo del texto generado y pie con contador monoespaciado (`JetBrains Mono`) y acciones rápidas (Copiar, Regenerar, Programar).
+
+### Insignias y Chips de Filtro (Chips & Badges)
+- **Insignia IA / Pro:** Fondo suave `#FFEDD5`, texto coral `#C2410C`, tamaño de fuente `label-sm` (0.75rem), formato píldora (`rounded-full`), padding 2px 8px.
+- **Selector de Redes / Tono:** Fondo `#FAFAF9`, borde de 1px `#E7E5E4`, texto `#78716C`. Estado activo: fondo `#1C1917`, texto `#FFFFFF`, borde `#1C1917`.
+
+### Contadores y Métricas (Character Counters)
+- Renderizados con `JetBrains Mono` (`code-sm`).
+- Estados dinámicos: texto `#78716C` en rango normal; cambia a `#F97316` cuando restan menos de 20 caracteres; rojo de advertencia `#DC2626` si se supera el límite de la plataforma.
+
+### Casillas de Verificación y Switches (Toggles)
+- Switches de activación de automatización: pista de 36px x 20px con radio completo; fondo `#E7E5E4` inactivo y `#F97316` activo; perilla blanca `#FFFFFF` con deslizamiento mecánico limpio.

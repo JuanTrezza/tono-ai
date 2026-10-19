@@ -1,0 +1,8 @@
+{
+  "name": "TONO",
+  "description": "Generador de posts para redes sociales con IA. Creá contenido optimizado para LinkedIn, Instagram, X y TikTok con la voz y tono de tu marca.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
