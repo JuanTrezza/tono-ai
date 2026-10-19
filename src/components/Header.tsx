@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, History } from 'lucide-react';
 import { isDemoMode } from '../services/generate';
+import { shortcutLabel } from '../utils/platform';
 
 interface HeaderProps {
   activeTab: 'creador' | 'plantillas';
@@ -15,9 +16,7 @@ export const Header: React.FC<HeaderProps> = ({
   onOpenHistory,
   historyCount,
 }) => {
-  // Determine key label based on platform
-  const isMac = typeof window !== 'undefined' && navigator.platform.toUpperCase().indexOf('MAC') >= 0;
-  const historyKeyLabel = isMac ? '⌘H' : 'Ctrl+H';
+  const historyKeyLabel = shortcutLabel('H');
 
   return (
     <header className="sticky top-0 left-0 right-0 z-40 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-variant">

@@ -24,6 +24,7 @@ import { PreviewModal } from './components/PreviewModal';
 import { HistoryDrawer } from './components/HistoryDrawer';
 import { TemplatesView } from './components/TemplatesView';
 import { Toast } from './components/Toast';
+import { isMacPlatform, shortcutLabel } from './utils/platform';
 import {
   Sparkles,
   ChevronDown,
@@ -383,8 +384,7 @@ export default function App() {
       // Don't trigger if modal or drawer is open
       if (previewModal.isOpen) return;
 
-      const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
-      const cmdKey = isMac ? e.metaKey : e.ctrlKey;
+      const cmdKey = isMacPlatform() ? e.metaKey : e.ctrlKey;
 
       // Cmd/Ctrl + Enter
       if (cmdKey && e.key === 'Enter') {
@@ -514,6 +514,10 @@ export default function App() {
                     </div>
                   </div>
 
+                  <p className="text-xs text-on-surface-variant">
+                    No incluyas datos personales: los textos se procesan con la API gratuita de Gemini.
+                  </p>
+
                   {validationError && (
                     <div className="flex items-center gap-1 text-xs text-error font-medium pt-0.5">
                       <AlertCircle className="w-3.5 h-3.5" aria-hidden="true" />
@@ -633,7 +637,7 @@ export default function App() {
                     {isGeneratingAny ? 'Generando variantes...' : 'Generar posts'}
                   </span>
                   <kbd className="ml-1.5 px-1.5 py-0.5 rounded bg-black/20 text-white font-mono text-[10px]">
-                    ⌘↵
+                    {shortcutLabel('↵')}
                   </kbd>
                 </button>
 
@@ -739,9 +743,11 @@ export default function App() {
       {/* Quiet Footer */}
       <footer className="w-full border-t border-surface-variant bg-surface-container-lowest py-4 mt-auto">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-on-surface-variant font-sans">
-          <span>© 2025 TONO AI • Productividad asistida para redes</span>
+          <span>© {new Date().getFullYear()} TONO AI • Productividad asistida para redes</span>
           <div className="flex items-center gap-4">
-            <span className="font-mono text-[11px]">Atajos: ⌘↵ Generar · ⌘H Historial</span>
+            <span className="font-mono text-[11px]">
+              Atajos: {shortcutLabel('↵')} Generar · {shortcutLabel('H')} Historial
+            </span>
           </div>
         </div>
       </footer>
