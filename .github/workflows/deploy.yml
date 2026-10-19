@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - 'worker/**'
   workflow_dispatch:
 
 permissions:
@@ -36,6 +38,8 @@ jobs:
 
       - name: Build application
         run: npm run build
+        env:
+          VITE_API_URL: ${{ vars.VITE_API_URL }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

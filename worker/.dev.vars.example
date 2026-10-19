@@ -1,0 +1,2 @@
+# Copiá este archivo como .dev.vars y poné tu key real. .dev.vars está en .gitignore.
+GEMINI_API_KEY=pegá-acá-tu-api-key

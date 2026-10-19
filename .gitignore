@@ -6,3 +6,8 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Cloudflare Worker: secretos locales y cache de wrangler
+.dev.vars*
+!.dev.vars.example
+.wrangler/

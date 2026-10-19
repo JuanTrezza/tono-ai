@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "tono-ai-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "observability": { "enabled": true },
+
+  // Variables públicas (NO secretas). La API key va como secret: `wrangler secret put GEMINI_API_KEY`.
+  "vars": {
+    "GEMINI_MODEL": "gemini-3.8-flash",
+    "ALLOWED_ORIGINS": "https://juantrezza.github.io,http://localhost:3000"
+  },
+
+  // 15 pedidos por minuto por IP. namespace_id debe ser único dentro de la cuenta.
+  "ratelimits": [
+    {
+      "name": "RATE_LIMITER",
+      "namespace_id": "4317",
+      "simple": { "limit": 15, "period": 60 }
+    }
+  ]
+}
